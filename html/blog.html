@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bài viết | King Helmet</title>
-    <link rel="icon" href="../images/img/logokinghelmet.png" type="image/x-icon">
-    <link rel="shortcut icon" href="../images/img/logokinghelmet.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài viết | Kids-Fashion</title>
+    <link rel="icon" href="../images/img/logo.png" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="../images/img/logo.png"
+      type="image/x-icon"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/all.css">
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/all.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/product.css" />
 
     <!-- js -->
     <script src="../js/jquery-3.5.1.slim.min.js"></script>
@@ -20,511 +23,692 @@
     <script src="../js/jquery-3.7.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/sanpham.js"></script>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- top header -->
     <div class="container-fluid">
-        <div class="row text-center" id="top-header">
-            <div class="col-md-3 my-2 p-1">
-                <i class="fa-solid fa-calendar-days"></i>
-                <span id="dateNow">03/04/2024</span>
-            </div>
-            <div class="col-md-3 my-2 p-1">
-                <ul id="top-social-media">
-                    <li class="list-inline-item mx-2"><a href="#"><i class="fab fa-facebook"></i></a></li>
-                    <li class="list-inline-item mx-2"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li class="list-inline-item mx-2"><a href="#"><i class="fab fa-tiktok"></i></a></li>
-                    <li class="list-inline-item mx-2"><a href="#"><i class="fab fa-youtube"></i></a></li>
-                </ul>
-            </div>
-            <div class="col-md-6 my-2 p-1">
-                <ul id="top-contact">
-                    <li class="list-inline-item mx-2"><a href="../html/thanh-vien.html"><i class="fa-solid fa-users"></i> Thành viên</a></li>
-                    <li class="list-inline-item mx-2"><a href="../html/gio-hang.html"><i class="fa-solid fa-cart-shopping"></i> Giỏ
-                            hàng</a>
-                    </li>
-                    <li class="list-inline-item mx-2"><a href="../html/dang-ky.html"><i class="fa-solid fa-key"></i>
-                            Đăng
-                            kí</a></li>
-                    <li class="list-inline-item mx-2 active "><a href="../html/dang-nhap.html"><i
-                                class="fa-solid fa-right-from-bracket"></i> Đăng
-                            nhập</a></li>
-
-                    <li class="list-inline-item mx-2"><a href="../html/lien-he.html"><i class="fa-solid fa-info-circle"></i> Liên
-                            hệ</a></li>
-                </ul>
-            </div>
+      <div class="row text-center" id="top-header">
+        <div class="col-md-3 my-2 p-1">
+          <i class="fa-solid fa-calendar-days"></i>
+          <span id="dateNow">17/04/2025</span>
         </div>
+        <div class="col-md-3 my-2 p-1">
+          <ul id="top-social-media">
+            <li class="list-inline-item mx-2">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li class="list-inline-item mx-2">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li class="list-inline-item mx-2">
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+            </li>
+            <li class="list-inline-item mx-2">
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6 my-2 p-1">
+          <ul id="top-contact">
+            <li class="list-inline-item mx-2">
+              <a href="../html/thanh-vien.html"
+                ><i class="fa-solid fa-users"></i> Thành viên</a
+              >
+            </li>
+            <li class="list-inline-item mx-2">
+              <a href="../html/gio-hang.html"
+                ><i class="fa-solid fa-cart-shopping"></i> Giỏ hàng</a
+              >
+            </li>
+            <li class="list-inline-item mx-2">
+              <a href="../html/dang-ky.html"
+                ><i class="fa-solid fa-key"></i> Đăng kí</a
+              >
+            </li>
+            <li class="list-inline-item mx-2 active">
+              <a href="../html/dang-nhap.html"
+                ><i class="fa-solid fa-right-from-bracket"></i> Đăng nhập</a
+              >
+            </li>
+
+            <li class="list-inline-item mx-2">
+              <a href="../html/lien-he.html"
+                ><i class="fa-solid fa-info-circle"></i> Liên hệ</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
     <!-- end top header -->
 
-
-
     <!-- navbar start -->
-    <nav class="navbar navbar-expand-xl navbar-dark sticky-top p-2" id="navbar-menu">
-        <!-- Brand and logo -->
-        <a class="navbar-brand" href="../html/index.html"><img src="../images/img/logokinghelmet.png" alt="logo"
-                style="width:45px;"></a>
-        <a href="" class="navbar-brand font-weight-bold"> KING HELMET</a>
-        <!-- toggler hiện menu khi thu nhỏ -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa-solid fa-bars text-dark"></i>
-        </button>
+    <nav
+      class="navbar navbar-expand-xl navbar-dark sticky-top p-2"
+      id="navbar-menu"
+    >
+      <!-- Brand and logo -->
+      <a class="navbar-brand" href="../html/index.html"
+        ><img src="../images/img/logo.png" alt="logo" style="width: 45px"
+      /></a>
+      <a href="" class="navbar-brand font-weight-bold"> Kids-Fashion</a>
+      <!-- toggler hiện menu khi thu nhỏ -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fa-solid fa-bars text-dark"></i>
+      </button>
 
+      <!-- navbar links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto" id="nav-menu-link">
+          <li class="nav-item">
+            <a class="nav-link" href="../html/index.html"
+              ><i class="fa fa-home" aria-hidden="true"></i> TRANG CHỦ</a
+            >
+          </li>
 
-        <!-- navbar links -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto" id="nav-menu-link">
-                <li class="nav-item ">
-                    <a class="nav-link" href="../html/index.html"><i class="fa fa-home" aria-hidden="true"></i> TRANG
-                        CHỦ</a>
-                </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/shop.html"
+              ><i class="fa fa-shop" aria-hidden="true"></i> CỬA HÀNG</a
+            >
+          </li>
 
-                <li class="nav-item ">
-                    <a class="nav-link" href="../html/shop.html"><i class="fa fa-shop" aria-hidden="true"></i> CỬA
-                        HÀNG</a>
-                </li>
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbardrop"
+              data-toggle="dropdown"
+            >
+              <i class="fa fa-list"></i>
+              SẢN PHẨM
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="./html/quanbetrai.html"
+                >Quần bé trai</a
+              >
+              <a class="dropdown-item" href="./html/phukien.html">Phụ kiện</a>
+              <a class="dropdown-item" href="./html/quanbegai.html"
+                >Quần bé gái</a
+              >
+              <a class="dropdown-item" href="./html/aothunbetrai.html"
+                >Áo thun bé trai</a
+              >
+              <a class="dropdown-item" href="./html/dobobetrai.html"
+                >Đồ bộ bé trai</a
+              >
+              <a class="dropdown-item" href="./html/dobobegai.html"
+                >Đồ bộ bé gái</a
+              >
+              <a class="dropdown-item" href="./html/aothunbegai.html"
+                >Áo thun bé gái</a
+              >
+            </div>
+          </li>
 
-                <!-- Dropdown -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                        <i class="fa fa-list"></i>
-                        SẢN PHẨM
-                    </a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="../html/mu34.html">Mũ bảo hiểm 3/4 đầu</a>
-                        <a class="dropdown-item" href="../html/mufull.html">Mũ bảo hiểm Fullface</a>
-                        <a class="dropdown-item" href="../html/mulatcam.html">Mũ bảo hiểm lật cằm</a>
-                        <a class="dropdown-item" href="../html/mu12.html">Mũ bảo hiểm 1/2 đầu</a>
-                        <a class="dropdown-item" href="../html/muxedap.html">Mũ bảo hiểm Xe Đạp</a>
-                        <a class="dropdown-item" href="../html/mutreme.html">Mũ bảo hiểm trẻ em</a>
-                        <a class="dropdown-item" href="../html/kinhmubaohiem.html">Kính mũ bảo hiểm</a>
-                    </div>
-                </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/gio-hang.html">
+              <i class="fa-solid fa-money-check-dollar"></i> THANH TOÁN
+            </a>
+          </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="../html/gio-hang.html"> <i class="fa-solid fa-money-check-dollar"></i> THANH TOÁN </a>
-                </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="../html/blog.html">
+              <i class="fa-solid fa-comments"></i> BÀI VIẾT</a
+            >
+          </li>
+        </ul>
 
-                <li class="nav-item active">
-                    <a class="nav-link" href="../html/blog.html"> <i class="fa-solid fa-comments"></i> BÀI VIẾT</a>
-                </li>
+        <!-- nav right và mục tìm kiếm -->
+        <form id="nav-form-search" class="form-inline ml-auto" action="">
+          <!-- mục tìm kiếm -->
+          <div class="input-group" id="input-search-top">
+            <!-- Danh mục sản phẩm -->
+            <select name="" id="select-product-category" class="custom-select">
+              <option value="all">Tất cả sản phẩm</option>
+              <option value="qboy">Quần bé trai</option>
+              <option value="pk">Phụ kiện</option>
+              <option value="qgirl">Quần bé gái</option>
+              <option value="aboy">Áo thun bé trai</option>
+              <option value="dbboy">Đồ bộ bé trai</option>
+              <option value="dbgirl">Đồ bộ bé gái</option>
+              <option value="agirl">Áo thun bé gái</option>
+            </select>
 
-            </ul>
+            <!-- Mục tìm kiếm -->
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Tìm kiếm ..."
+            />
 
-            <!-- nav right và mục tìm kiếm -->
-            <form id="nav-form-search" class="form-inline ml-auto" action="">
-
-
-                <!-- mục tìm kiếm -->
-                <div class="input-group" id="input-search-top">
-                    <!-- Danh mục sản phẩm -->
-                    <select name="" id="select-product-category" class="custom-select">
-                        <option value="all">Tất cả sản phẩm</option>
-                        <option value="3/4">Mũ bảo hiểm 3/4 đầu</option>
-                        <option value="fullface">Mũ bảo hiểm Fullface</option>
-                        <option value="flip-up">Mũ bảo hiểm lật cằm</option>
-                        <option value="half">Mũ bảo hiểm 1/2 đầu</option>
-                        <option value="bike">Mũ bảo hiểm xe đạp</option>
-                        <option value="kids">Mũ bảo hiểm trẻ em</option>
-                        <option value="goggles">Kính mũ bảo hiểm</option>
-                    </select>
-
-                    <!-- Mục tìm kiếm -->
-                    <input type="text" class="form-control" placeholder="Tìm kiếm ...">
-
-                    <div class="input-group-append">
-                        <button class="btn btn-outline-secondary bg-light" type="submit">
-                            <i class="fas fa-search"></i>
-                        </button>
-                    </div>
-                </div>
-
-            </form>
-        </div>
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary bg-light" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
     </nav>
     <!-- navbar end -->
 
     <nav aria-label="breadcrumb ">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="../html/index.html">Trang chủ</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Bài viết</li>
-        </ol>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="../html/index.html">Trang chủ</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">Bài viết</li>
+      </ol>
     </nav>
 
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-3 d-none d-md-block mt-5" id="aside">
-
-                <!-- sản phấm bán chạy nhất -->
-                <div class="row" id="bestSellersCarouselContainer">
-                    <!-- SP1 -->
-                    <div class="col-lg-12 col-md-3 p-2">
-                        <div class="product-card"
-                            data-product="{&quot;name&quot;:&quot;Mũ 3/4 - Mẫu 4&quot;,&quot;image&quot;:&quot;../images/mbh_34/mu34_04.jpg&quot;,&quot;category&quot;:&quot;Mũ 3/4&quot;,&quot;description&quot;:&quot;Mũ bảo hiểm loại 3/4 đầu, phong cách đơn giản nhưng hiện đại.&quot;,&quot;price&quot;:480000,&quot;discountPercent&quot;:30,&quot;discountPrice&quot;:336000,&quot;details&quot;:[&quot;- Vỏ bằng polycarbonate&quot;,&quot;- Trọng lượng: 880g ± 50g&quot;,&quot;- Size XL: 58 - 60cm&quot;,&quot;- Size L: 56 - 58cm&quot;,&quot;- Size M: 54 - 56cm&quot;]}">
-
-                            <div class="product-content">
-                                <img src="../images/mbh_34/mu34_04.jpg" alt="Mũ 3/4 - Mẫu 4"
-                                    class="product-image img-fluid float-left mr-2">
-                                <div class="product-title text-center">Mũ 3/4 - Mẫu 4</div>
-                                <div class="product-description">Mũ bảo hiểm loại 3/4 đầu, phong cách đơn giản
-                                    nhưng hiện đại.</div>
-                                <ul id="vote-5-star" class="mr-0">
-                                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
-                                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
-                                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
-                                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
-                                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
-                                </ul>
-                                <div class="product-price-container">
-                                    <div class="product-discount">480.000 VND</div>
-                                    <div class="product-price">336.000 VND</div>
-                                </div>
-                            </div>
-                            <div class="btn-discount">-30%</div>
-                        </div>
-                    </div>
-
-
-
-                    <!-- SP2 -->
-                    <div class="col-lg-12 col-md-3 p-2">
-                        <div class="product-card"
-                            data-product="{&quot;name&quot;:&quot;Mũ Fullface - Mẫu 1&quot;,&quot;image&quot;:&quot;../images/mbh_fullface/full01.jpg&quot;,&quot;category&quot;:&quot;Mũ Fullface&quot;,&quot;description&quot;:&quot;Mũ bảo hiểm Fullface chất lượng cao, bảo vệ toàn diện cho đầu.&quot;,&quot;price&quot;:800000,&quot;discountPercent&quot;:30,&quot;discountPrice&quot;:560000,&quot;details&quot;:[&quot;- Vỏ bằng polycarbonate&quot;,&quot;- Trọng lượng: 900g ± 50g&quot;,&quot;- Size XL: 58 - 60cm&quot;,&quot;- Size L: 56 - 58cm&quot;,&quot;- Size M: 54 - 56cm&quot;]}">
-                            <div class="product-content ">
-                                <img src="../images/mbh_fullface/full01.jpg" alt="Mũ Fullface - Mẫu 1"
-                                    class="product-image float-left mr-2">
-                                <div class="product-title text-center">Mũ Fullface - Mẫu 1</div>
-                                <div class="product-description">Mũ bảo hiểm Fullface chất lượng cao, bảo vệ
-                                    toàn diện cho đầu.</div>
-                                <ul id="vote-5-star" class="mr-0">
-                                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
-                                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
-                                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
-                                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
-                                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
-                                </ul>
-                                <div class="product-price-container">
-                                    <div class="product-discount">800.000 VND</div>
-                                    <div class="product-price">560.000 VND</div>
-                                </div>
-                            </div>
-                            <div class="btn-discount">-30%</div>
-                        </div>
-                    </div>
-
-
-                    <!-- SP3 -->
-                    <div class="col-lg-12 col-md-3 p-2">
-                        <div class="product-card"
-                            data-product="{&quot;name&quot;:&quot;Mũ lật cằm - Mẫu 3&quot;,&quot;image&quot;:&quot;../images/mbh_latcam/latcam03.jpg&quot;,&quot;category&quot;:&quot;Mũ lật cằm&quot;,&quot;description&quot;:&quot;Mũ bảo hiểm lật cằm chất lượng, bảo vệ an toàn cho người sử dụng.&quot;,&quot;price&quot;:590000,&quot;discountPercent&quot;:20,&quot;discountPrice&quot;:472000,&quot;details&quot;:[&quot;- Vỏ bằng nhựa ABS nguyên sinh&quot;,&quot;- Trọng lượng: 1237g ± 50g&quot;,&quot;- Size XL: 58 - 59cm&quot;,&quot;- Size L: 56 - 57cm&quot;]}">
-                            <div class="product-content ">
-                                <img src="../images/mbh_latcam/latcam03.jpg" alt="Mũ lật cằm - Mẫu 3"
-                                    class="product-image float-left mr-2">
-                                <div class="product-title text-center">Mũ lật cằm - Mẫu 3</div>
-                                <div class="product-description">Mũ bảo hiểm lật cằm chất lượng, bảo vệ an toàn
-                                    cho người sử dụng.</div>
-                                <ul id="vote-5-star" class="mr-0">
-                                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
-                                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
-                                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
-                                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
-                                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
-                                </ul>
-                                <div class="product-price-container">
-                                    <div class="product-discount">590.000 VND</div>
-                                    <div class="product-price">472.000 VND</div>
-                                </div>
-                            </div>
-                            <div class="btn-discount">-20%</div>
-                        </div>
-                    </div>
-
-
-                    <!-- sp4 -->
-                    <div class="col-lg-12 col-md-3 p-2">
-                        <div class="product-card"
-                            data-product="{&quot;name&quot;:&quot;Mũ Fullface - Mẫu 5&quot;,&quot;image&quot;:&quot;../images/mbh_fullface/full05.jpg&quot;,&quot;category&quot;:&quot;Mũ Fullface&quot;,&quot;description&quot;:&quot;Mũ bảo hiểm Fullface thời trang, phong cách và độ bền cao.&quot;,&quot;price&quot;:790000,&quot;discountPercent&quot;:30,&quot;discountPrice&quot;:553000,&quot;details&quot;:[&quot;- Vỏ bằng polycarbonate&quot;,&quot;- Trọng lượng: 890g ± 50g&quot;,&quot;- Size XL: 58 - 60cm&quot;,&quot;- Size L: 56 - 58cm&quot;,&quot;- Size M: 54 - 56cm&quot;]}">
-                            <div class="product-content ">
-                                <img src="../images/mbh_fullface/full05.jpg" alt="Mũ Fullface - Mẫu 5"
-                                    class="product-image img-fluid float-left mr-2 ">
-                                <div class="product-title text-center">Mũ Fullface - Mẫu 5</div>
-                                <div class="product-description">Mũ bảo hiểm Fullface thời trang, phong cách và
-                                    độ bền cao.</div>
-                                <ul id="vote-5-star" class="mr-0">
-                                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
-                                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
-                                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
-                                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
-                                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
-                                </ul>
-                                <div class="product-price-container">
-                                    <div class="product-discount ">790.000 VND</div>
-                                    <div class="product-price ">553.000 VND</div>
-                                </div>
-                            </div>
-                            <div class="btn-discount">-30%</div>
-                        </div>
-                    </div>
+      <div class="row">
+        <div class="col-lg-3 d-none d-md-block mt-5" id="aside">
+          <!-- sản phấm bán chạy nhất -->
+          <div class="row" id="bestSellersCarouselContainer">
+            <!-- SP1 -->
+            <div class="col-12 p-2">
+              <div
+                class="product-card"
+                data-product='{"name":"Quần jean dài bé trai","image":"/images/QuanBTrai/qd4.webp","category":"Quần bé trai","description":"Quần jean dài cho bé trai, chất liệu mềm mại và thoải mái.","price":480000,"discountPercent":30,"discountPrice":336000,"details":["- Chất liệu: 100% cotton","- Size: Phù hợp với bé trai cân nặng từ 12 - 37kg, từ 3 - 13 tuổi","- Size XL: 14 - 15 tuổi","- Size L: 12 - 13 tuổi","- Size M: 10 - 11 tuổi"]}'
+              >
+                <div class="product-content">
+                  <img
+                    src="/images/QuanBTrai/qd4.webp"
+                    alt="Quần jean dài bé trai"
+                    class="product-image img-fluid float-left mr-2"
+                  />
+                  <div class="product-title text-center">
+                    Quần jean dài bé trai
+                  </div>
+                  <div class="product-description">
+                    Quần jean dài cho bé trai, chất liệu mềm mại và thoải mái.
+                  </div>
+                  <ul id="vote-5-star" class="mr-0">
+                    <li class="list-inline-item">
+                      <i class="fa fa-star text-warning"></i>
+                    </li>
+                    <li class="list-inline-item">
+                      <i class="fa fa-star text-warning"></i>
+                    </li>
+                    <li class="list-inline-item">
+                      <i class="fa fa-star text-warning"></i>
+                    </li>
+                    <li class="list-inline-item">
+                      <i class="fa fa-star text-warning"></i>
+                    </li>
+                    <li class="list-inline-item">
+                      <i class="fa fa-star text-warning"></i>
+                    </li>
+                  </ul>
+                  <div class="product-price-container">
+                    <div class="product-discount">480.000 VND</div>
+                    <div class="product-price">336.000 VND</div>
+                  </div>
                 </div>
-
+                <div class="btn-discount">-30%</div>
+              </div>
             </div>
-            <div class=" col-lg-9 col-md-12 col-sm-12" id="section">
-                <!-- Bài viết start -->
-                <div class="container-fluid my-4">
-                    <h3 class="display-4 text-center ">Bài viết</h3>
-                    <div class="row p-3">
-                        <div class="col-md-12  border  m-2 ">
-                            <div class="row align-items-center h-100">
-                                <div class="col-4 d-flex align-items-center p-2">
-                                    <img src="../images/img/blog1.png" class="img-fluid rounded" alt="Blog 1">
-                                </div>
-                                <div class="col-8">
-                                    <h6 class="mb-3">5 lợi ích của việc đội mũ bảo hiểm khi lái xe máy</h6>
-                                    <p class="text-justify mb-4">
-                                        Đội mũ bảo hiểm khi lái xe máy không chỉ là việc bắt buộc mà còn mang lại nhiều
-                                        lợi ích cho sức khỏe và an toàn của bạn. Hãy tìm hiểu 5 lợi ích quan trọng này
-                                        trong bài viết sau.
-                                    </p>
-                                    <div class="text-center">
-                                        <a href="../html/blog-5-loi-ich-cua-viec-doi-mu-bao-hiem-khi-lai-xe.html" class="btn btn-info btn-sm">Xem thêm ...</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="col-md-12 border m-2">
-                            <div class="row align-items-center h-100">
-                                <div class="col-4 d-flex align-items-center p-2">
-                                    <img src="../images/img/blog2.png" class="img-fluid rounded" alt="Blog 2">
-                                </div>
-                                <div class="col-8">
-                                    <h6 class="mb-3">Chọn mũ bảo hiểm phù hợp với hình dáng khuôn mặt của bạn</h6>
-                                    <p class="text-justify mb-4">
-                                        Mũ bảo hiểm không chỉ cần phải đảm bảo an toàn mà còn phải phản ánh phong cách
-                                        và
-                                        hình dáng khuôn mặt của bạn. Hãy cùng tìm hiểu cách chọn mũ bảo hiểm phù hợp với
-                                        hình dáng khuôn mặt của bạn trong bài viết này.
-                                    </p>
-                                    <div class="text-center">
-                                        <a href="../html/blog-chon-mu-bao-hiem-phu-hop-voi-hinh-dang-khuon-mat-ban.html" class="btn btn-info btn-sm">Xem thêm ...</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <!-- SP2 -->
+            <div class="col-lg-12 col-md-3 p-2">
+              <div
+                class="product-card"
+                data-product='{"name":"Giày thể thao","image":"/images/pkien/pk1.webp","category":"Phụ kiện","description":"Giày thể thao thời trang, chất liệu thoáng khí và nhẹ nhàng.","price":800000,"discountPercent":30,"discountPrice":560000,"details":["- Chất liệu: Da Pu cao cấp","- Size: Phù hợp với bé chân từ 16cm","- Size 25: 16cm","- Size 26: 17cm","- Size 27: 18cm"]}'
+              >
+                <div class="product-content">
+                  <img
+                    src="/images/pkien/pk1.webp"
+                    alt="Giày thể thao"
+                    class="product-image float-left mr-2"
+                  />
+                  <div class="product-title text-center">Giày thể thao</div>
+                  <div class="product-description">
+                    Giày thể thao thời trang, chất liệu thoáng khí và nhẹ nhàng.
+                  </div>
+                  <ul id="vote-5-star" class="mr-0">
+                    <li class="list-inline-item">
+                      <i class="fa fa-star text-warning"></i>
+                    </li>
+                    <li class="list-inline-item">
+                      <i class="fa fa-star text-warning"></i>
+                    </li>
+                    <li class="list-inline-item">
+                      <i class="fa fa-star text-warning"></i>
+                    </li>
+                    <li class="list-inline-item">
+                      <i class="fa fa-star text-warning"></i>
+                    </li>
+                    <li class="list-inline-item">
+                      <i class="fa fa-star text-warning"></i>
+                    </li>
+                  </ul>
+                  <div class="product-price-container">
+                    <div class="product-discount">800.000 VND</div>
+                    <div class="product-price">560.000 VND</div>
+                  </div>
                 </div>
-                <!-- end bài viết -->
+                <div class="btn-discount">-30%</div>
+              </div>
             </div>
+
+            <!-- SP3 -->
+            <div class="col-lg-12 col-md-3 p-2">
+              <div
+                class="product-card"
+                data-product='{"name":"MQuần jean dài bé gái","image":"/images/QuanBGai/q3.webp","category":"Quần bé gái","description":"Quần jean dài bé gái, thiết kế thời trang và thoải mái.","price":590000,"discountPercent":20,"discountPrice":472000,"details":["- Chất liệu: 100% cotton","- Size: Phù hợp với bé gái cân nặng từ 12 - 37kg, từ 3 - 15 tuổi","- Size XL: 14 - 15 tuổi","- Size L: 12 - 13 tuổi"]}'
+              >
+                <div class="product-content">
+                  <img
+                    src="/images/QuanBGai/q3.webp"
+                    alt="Quần jean dài bé gái"
+                    class="product-image float-left mr-2"
+                  />
+                  <div class="product-title text-center">
+                    Quần jean dài bé gái
+                  </div>
+                  <div class="product-description">
+                    Quần jean dài bé gái, thiết kế thời trang và thoải mái.
+                  </div>
+                  <ul id="vote-5-star" class="mr-0">
+                    <li class="list-inline-item">
+                      <i class="fa fa-star text-warning"></i>
+                    </li>
+                    <li class="list-inline-item">
+                      <i class="fa fa-star text-warning"></i>
+                    </li>
+                    <li class="list-inline-item">
+                      <i class="fa fa-star text-warning"></i>
+                    </li>
+                    <li class="list-inline-item">
+                      <i class="fa fa-star text-warning"></i>
+                    </li>
+                    <li class="list-inline-item">
+                      <i class="fa fa-star text-warning"></i>
+                    </li>
+                  </ul>
+                  <div class="product-price-container">
+                    <div class="product-discount">590.000 VND</div>
+                    <div class="product-price">472.000 VND</div>
+                  </div>
+                </div>
+                <div class="btn-discount">-20%</div>
+              </div>
+            </div>
+
+            <!-- sp4 -->
+            <div class="col-lg-12 col-md-3 p-2">
+              <div
+                class="product-card"
+                data-product='{"name":"Giày hình gấu dễ thương","image":"/images/pkien/pk5.webp","category":"Phụ kiện","description":"Giày hình gấu dễ thương, thiết kế độc đáo và phong cách.","price":790000,"discountPercent":30,"discountPrice":553000,"details":["- Chất liệu: Vải Canvas cao cấp","- Size: Phù hợp với bé chân từ 16cm","- Size 25: 16cm","- Size 26: 17cm","- Size 27: 18cm"]}'
+              >
+                <div class="product-content">
+                  <img
+                    src="/images/pkien/pk5.webp"
+                    alt="Giày hình gấu dễ thương"
+                    class="product-image img-fluid float-left mr-2"
+                  />
+                  <div class="product-title text-center">
+                    Giày hình gấu dễ thương
+                  </div>
+                  <div class="product-description">
+                    Giày hình gấu dễ thương, thiết kế độc đáo và phong cách.
+                  </div>
+                  <ul id="vote-5-star" class="mr-0">
+                    <li class="list-inline-item">
+                      <i class="fa fa-star text-warning"></i>
+                    </li>
+                    <li class="list-inline-item">
+                      <i class="fa fa-star text-warning"></i>
+                    </li>
+                    <li class="list-inline-item">
+                      <i class="fa fa-star text-warning"></i>
+                    </li>
+                    <li class="list-inline-item">
+                      <i class="fa fa-star text-warning"></i>
+                    </li>
+                    <li class="list-inline-item">
+                      <i class="fa fa-star text-warning"></i>
+                    </li>
+                  </ul>
+                  <div class="product-price-container">
+                    <div class="product-discount">790.000 VND</div>
+                    <div class="product-price">553.000 VND</div>
+                  </div>
+                </div>
+                <div class="btn-discount">-30%</div>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="col-lg-9 col-md-12 col-sm-12" id="section">
+          <!-- Bài viết start -->
+          <div class="container-fluid my-4">
+            <h3 class="display-4 text-center">Bài viết</h3>
+            <div class="row p-3">
+              <div class="col-md-12 border m-2">
+                <div class="row align-items-center h-100">
+                  <div class="col-4 d-flex align-items-center p-2">
+                    <img
+                      src="../images/img/blog1.png"
+                      class="img-fluid rounded"
+                      alt="Blog 1"
+                    />
+                  </div>
+                  <div class="col-8">
+                    <h6 class="mb-3">
+                      🏖️ BST Hè 2025: Mặc đẹp, chơi vui cùng Kiddo Shop! 🌞🌴
+                    </h6>
+                    <p class="text-justify mb-4">
+                      Mùa hè đến rồi! Đây là thời điểm lý tưởng để cả gia đình
+                      có những chuyến du lịch biển mát lành, những buổi dã ngoại
+                      cuối tuần hay đơn giản là cho bé yêu tận hưởng kỳ nghỉ
+                      thật vui vẻ. Và để hành trình mùa hè của bé trở nên thoải
+                      mái – thời trang – năng động, một set đồ phù hợp sẽ là
+                      điều không thể thiếu!
+                    </p>
+                    <div class="text-center">
+                      <a href="../html/blog-1.html" class="btn btn-info btn-sm"
+                        >Xem thêm ...</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-12 border m-2">
+                <div class="row align-items-center h-100">
+                  <div class="col-4 d-flex align-items-center p-2">
+                    <img
+                      src="../images/img/blog2.png"
+                      class="img-fluid rounded"
+                      alt="Blog 2"
+                    />
+                  </div>
+                  <div class="col-8">
+                    <h6 class="mb-3">
+                      🌴 Bé yêu mặc đẹp - Tự tin khám phá mùa hè cùng Kiddo
+                      Shop! 🧢📸
+                    </h6>
+                    <p class="text-justify mb-4">
+                      👉 Mùa hè là thời điểm tuyệt vời để bé nhà bạn thỏa sức
+                      vui chơi, khám phá thế giới xung quanh. Và không gì tuyệt
+                      hơn khi bé được diện những bộ trang phục thoải mái, năng
+                      động và cực kỳ “trendy” như set đồ của bé trong hình!
+                    </p>
+                    <div class="text-center">
+                      <a href="../html/blog-2.html" class="btn btn-info btn-sm"
+                        >Xem thêm ...</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end bài viết -->
+        </div>
+      </div>
     </div>
-
-
-
-
 
     <!-- Modal -->
-    <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h3 class="modal-title w-100 text-center" id="productModalLabel">Thông tin sản phẩm</h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body" id="productModalBody">
-                    <!-- Nội dung sản phẩm sẽ được cập nhật bằng JavaScript -->
-                </div>
-                <div id="alertContainer"></div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
-
-                </div>
-            </div>
+    <div
+      class="modal fade"
+      id="productModal"
+      tabindex="-1"
+      aria-labelledby="productModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title w-100 text-center" id="productModalLabel">
+              Thông tin sản phẩm
+            </h3>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="productModalBody">
+            <!-- Nội dung sản phẩm sẽ được cập nhật bằng JavaScript -->
+          </div>
+          <div id="alertContainer"></div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Đóng
+            </button>
+          </div>
         </div>
+      </div>
     </div>
-
 
     <div class="container mt-5">
-        <div class="row justify-content-end">
-            <div class="col-md-3">
-                <div class="shopping-cart">
-                    <button class="btn shopping-cart-btn dropdown-toggle" type="button" id="dropdownMenuButton"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="num-item-in-cart rounded-circle">0</span>
-                        <i class="fa-solid fa-cart-plus"></i>
-                    </button>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                        <div class="dropdown-item figure text-center rounded-0 p-3 mx-auto empty-cart-message" style="display: none;">
-                            <div class="figure-caption text-bg text-big">Chưa có sản phẩm nào trong giỏ hàng</div>
-                        </div>
-                        <div class="cart-items-container">
-                            <!-- Danh sách sản phẩm trong giỏ hàng sẽ được thêm vào đây -->
-                        </div>
-                        <button class="btn w-100 text-md mx-auto mt-3 pay-btn">Thanh toán</button>
-                    </div>
-                    
+      <div class="row justify-content-end">
+        <div class="col-md-3">
+          <div class="shopping-cart">
+            <button
+              class="btn shopping-cart-btn dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span class="num-item-in-cart rounded-circle">0</span>
+              <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <div
+              class="dropdown-menu dropdown-menu-right"
+              aria-labelledby="dropdownMenuButton"
+            >
+              <div
+                class="dropdown-item figure text-center rounded-0 p-3 mx-auto empty-cart-message"
+                style="display: none"
+              >
+                <div class="figure-caption text-bg text-big">
+                  Chưa có sản phẩm nào trong giỏ hàng
                 </div>
+              </div>
+              <div class="cart-items-container">
+                <!-- Danh sách sản phẩm trong giỏ hàng sẽ được thêm vào đây -->
+              </div>
+              <button class="btn w-100 text-md mx-auto mt-3 pay-btn">
+                Thanh toán
+              </button>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-
-
 
     <!-- foooter start -->
     <div id="footer" class="mt-5 w-100">
-        <div class="container">
-            <div id="footer-main">
-                <div class="row">
-                    <!-- giới thiệu -->
-                    <div class="col-md-5 mt-3 ">
-                        <div class="cty-name">
-                            <a href="../html/home.html"><img src="../images/img/logokinghelmet.png" style="width: 70px;"
-                                    alt="logo">
-                            </a>
-                            <span class="ten-cty"> CÔNG TY TTHH KING HELMET </span>
+      <div class="container">
+        <div id="footer-main">
+          <div class="row">
+            <!-- giới thiệu -->
+            <div class="col-md-5 mt-3">
+              <div class="cty-name">
+                <a href="../html/home.html"
+                  ><img
+                    src="../images/img/logo.png"
+                    style="width: 70px"
+                    alt="logo"
+                  />
+                </a>
+                <span class="ten-cty"> CÔNG TY TTHH KIDS-FASHION </span>
+              </div>
 
-                        </div>
-
-                        <div class="cty-about mt-2">
-                            <span class="contact-icon">
-                                <span><i class="fa-solid fa-bookmark"></i></span>
-                            </span>
-                            <div class="contact-detail">
-                                Chuyên cung cấp các sản phẩm về mũ bảo hiểm chất lượng cao. Cùng bạn đồng hành trên
-                                những chặng đường phiêu du
-
-                            </div>
-                        </div>
-
-                        <div class="cty-ban-quyen mt-2">
-                            <span class="contact-icon">
-                                <i class="fa-solid fa-check"></i>
-                            </span>
-                            <div class="contact-detail">
-                                © Mọi hình ảnh được sử dụng trong website thuộc quyền sở hữu của
-                                <a href="https://royalhelmet.com.vn/">Royalhelmet</a>.
-                                Mọi giao dịch đều là ảo không thể thanh toán.
-                            </div>
-                        </div>
-
-                        <div class="cty-muc-dich mt-2">
-                            <span class="contact-icon">
-                                <i class="fa-solid fa-school"></i>
-                            </span>
-                            <div class="contact-detail">
-                                Đây là dự án bài tập lớn của môn Hệ thống Công nghệ
-                                website. Thực hiện viết và xây dựng lên website bán hàng. Mọi hình ảnh và sản phẩm
-                                trong
-                                website chỉ mang tính thử nghiệm, không mang tính chất thương mại.
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- liên hệ -->
-                    <div class="col-md-3 mt-3">
-                        <div class="cty-title-contact">
-                            <span class="ten-cty">Liên hệ</span>
-                        </div>
-
-                        <div class="cty-address mt-2">
-                            <span class="contact-icon">
-                                <i class="fa-solid fa-location-dot"></i>
-                            </span>
-                            <div class="contact-detail">
-                                Địa chỉ: 12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, TP.HCM
-                            </div>
-                        </div>
-
-                        <div class="cty-tel mt-2">
-                            <span class="contact-icon">
-                                <i class="fa-solid fa-phone"></i>
-                            </span>
-                            <div class="contact-detail">
-                                <a href="tel:+028 123 4567">Điện thoại: +028 123 4567</a>
-                            </div>
-                        </div>
-
-                        <div class="cty-mail mt-2">
-                            <span class="contact-icon">
-                                <i class="fa-solid fa-envelope"></i>
-                            </span>
-                            <div class="contact-detail">
-                                <a href="mailto:cskh@kinghelmet.com">Email: cskh@kinghelmet.com</a>
-                            </div>
-                        </div>
-
-                        <div class="cty-web mt-2">
-                            <span class="contact-icon">
-                                <i class="fa-solid fa-globe"></i>
-                            </span>
-                            <div class="contact-detail">
-                                <a href="https://hplamit1302.github.io/KingHelmet/">Website: www.kinghelmet.com</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Theo dõi chúng tôi -->
-                    <div class="col-md-4 mt-3">
-                        <div class="cty-follow-us mb-3">
-                            <span class="ten-cty mb-2">Tương tác với chúng tôi</span>
-                            <ul id="bottom-social-media" class="font-size-lagre">
-                                <li class="list-inline-item mx-2"><a href="#"><i class="fab fa-facebook"></i></a></li>
-                                <li class="list-inline-item mx-2"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                <li class="list-inline-item mx-2"><a href="#"><i class="fab fa-tiktok"></i></a></li>
-                                <li class="list-inline-item mx-2"><a href="#"><i class="fab fa-youtube"></i></a></li>
-                            </ul>
-                        </div>
-
-                        <div class="mb-3">
-                            <span class="ten-cty my-2">Phương thức thanh toán</span>
-                            <ul class="nav">
-                                <li class="mx-1"><img src="../images/img/payment_1_img.webp" alt=""></li>
-                                <li class="mx-1"><img src="../images/img/payment_2_img.webp" alt=""></li>
-                                <li class="mx-1"><img src="../images/img/payment_3_img.webp" alt=""></li>
-                            </ul>
-                        </div>
-
-                        <div class="mb-3">
-                            <span class="ten-cty my-2">Phương thức vận chuyển</span>
-                            <ul class="nav">
-                                <li class="mx-1"><img src="../images/img/shipment_1_img.webp" alt=""></li>
-                                <li class="mx-1"><img src="../images/img/shipment_2_img.webp" alt=""></li>
-                                <li class="mx-1"><img src="../images/img/shipment_3_img.webp" alt=""></li>
-                                <li class="mx-1"><img src="../images/img/shipment_4_img.webp" alt=""></li>
-                            </ul>
-                        </div>
-
-                    </div>
-
-
-
+              <div class="cty-about mt-2">
+                <span class="contact-icon">
+                  <span><i class="fa-solid fa-bookmark"></i></span>
+                </span>
+                <div class="contact-detail">
+                  Chuyên cung cấp các sản phẩm về quần áo trẻ em chất lượng cao.
+                  Cùng bé đồng hành trên con đường phát triển và trưởng thành.
                 </div>
+              </div>
+
+              <div class="cty-ban-quyen mt-2">
+                <span class="contact-icon">
+                  <i class="fa-solid fa-check"></i>
+                </span>
+                <div class="contact-detail">
+                  © Mọi hình ảnh được sử dụng trong website thuộc quyền sở hữu
+                  của
+                  <a href="https://rabity.vn/">Rabity</a>. Mọi giao dịch đều là
+                  ảo không thể thanh toán.
+                </div>
+              </div>
+
+              <div class="cty-muc-dich mt-2">
+                <span class="contact-icon">
+                  <i class="fa-solid fa-school"></i>
+                </span>
+                <div class="contact-detail">
+                  Đây là dự án bài tập lớn của môn Hệ thống Công nghệ Web. Thực
+                  hiện viết và xây dựng lên website bán hàng online. Mọi hình
+                  ảnh và sản phẩm trong website này chỉ mang tính thử nghiệm và
+                  không mang tính chất thương mại.
+                </div>
+              </div>
             </div>
 
-            <!-- footer bôttom -->
-            <div id="footer-bottom">
-                <div class="row" style=" width: 100%;">
-                    <div class="col-md-12">
+            <!-- liên hệ -->
+            <div class="col-md-3 mt-3">
+              <div class="cty-title-contact">
+                <span class="ten-cty">Liên hệ</span>
+              </div>
 
-                        <p> © 2024 King Helmet by Hồ Phúc Lâm . All Right Reserved. KING HELMET is Powered by HTML, CSS,
-                            Bootstrap
-                            4.</p>
-                        
-                    </div>
-
+              <div class="cty-address mt-2">
+                <span class="contact-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </span>
+                <div class="contact-detail">
+                  Địa chỉ: 12 Nguyễn Văn Bảo, Phường 1, Quận Gò Vấp, TP.HCM
                 </div>
+              </div>
+
+              <div class="cty-tel mt-2">
+                <span class="contact-icon">
+                  <i class="fa-solid fa-phone"></i>
+                </span>
+                <div class="contact-detail">
+                  <a href="tel:+028 520 5200">Điện thoại: +028 520 5200</a>
+                </div>
+              </div>
+
+              <div class="cty-mail mt-2">
+                <span class="contact-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </span>
+                <div class="contact-detail">
+                  <a href="mailto:cskh@kidsfashion.com"
+                    >Email: cskh@kidsfashion.com</a
+                  >
+                </div>
+              </div>
+
+              <div class="cty-web mt-2">
+                <span class="contact-icon">
+                  <i class="fa-solid fa-globe"></i>
+                </span>
+                <div class="contact-detail">
+                  <a href="https://github.com/Datsieucapdeptrai001/Kids-Fashion"
+                    >Website: www.kidsfashion.com</a
+                  >
+                </div>
+              </div>
             </div>
+
+            <!-- Theo dõi chúng tôi -->
+            <div class="col-md-4 mt-3">
+              <div class="cty-follow-us mb-3">
+                <span class="ten-cty mb-2">Tương tác với chúng tôi</span>
+                <ul id="bottom-social-media" class="font-size-lagre">
+                  <li class="list-inline-item mx-2">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                  </li>
+                  <li class="list-inline-item mx-2">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </li>
+                  <li class="list-inline-item mx-2">
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                  </li>
+                  <li class="list-inline-item mx-2">
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="mb-3">
+                <span class="ten-cty my-2">Phương thức thanh toán</span>
+                <ul class="nav">
+                  <li class="mx-1">
+                    <img src="../images/img/payment_1_img.webp" alt="" />
+                  </li>
+                  <li class="mx-1">
+                    <img src="../images/img/payment_2_img.webp" alt="" />
+                  </li>
+                  <li class="mx-1">
+                    <img src="../images/img/payment_3_img.webp" alt="" />
+                  </li>
+                </ul>
+              </div>
+
+              <div class="mb-3">
+                <span class="ten-cty my-2">Phương thức vận chuyển</span>
+                <ul class="nav">
+                  <li class="mx-1">
+                    <img src="../images/img/shipment_1_img.webp" alt="" />
+                  </li>
+                  <li class="mx-1">
+                    <img src="../images/img/shipment_2_img.webp" alt="" />
+                  </li>
+                  <li class="mx-1">
+                    <img src="../images/img/shipment_3_img.webp" alt="" />
+                  </li>
+                  <li class="mx-1">
+                    <img src="../images/img/shipment_4_img.webp" alt="" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- footer bottom -->
+        <div id="footer-bottom">
+          <div class="row" style="width: 100%">
+            <div class="col-md-12">
+              <p>
+                © 2025 Kids Fashion by Nguyễn Tuấn Đạt and Trần Long Thuận . All
+                Right Reserved. Kids Fashion is Powered by HTML, CSS, Bootstrap.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- footer endd -->
-
-
-</body>
-
-
+  </body>
 </html>

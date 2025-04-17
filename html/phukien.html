@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Đăng ký | Kids-Fashion</title>
+    <title>Phụ kiện | Kids-Fashion</title>
     <link rel="icon" href="../images/img/logo.png" type="image/x-icon" />
     <link
       rel="shortcut icon"
@@ -115,7 +115,7 @@
             >
           </li>
 
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="../html/shop.html"
               ><i class="fa fa-shop" aria-hidden="true"></i> CỬA HÀNG</a
             >
@@ -202,115 +202,124 @@
     </nav>
     <!-- navbar end -->
 
-    <nav aria-label="breadcrumb ">
+    <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
           <a href="../html/index.html">Trang chủ</a>
         </li>
         <li class="breadcrumb-item">
-          <a href="../html/thanh-vien.html">Thành viên</a>
+          <a href="../html/shop.html">Cửa hàng</a>
         </li>
-        <li class="breadcrumb-item active" aria-current="page">
-          Đăng ký tài khoản
-        </li>
+        <li class="breadcrumb-item active" aria-current="page">Phụ kiện</li>
       </ol>
     </nav>
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-3 d-md-block d-none" id="aside">
-          <div class="image-container">
-            <img src="../images/img/blog1.png" class="img-fluid active" />
-            <img src="../images/img/blog2.png" class="img-fluid" />
-            <img src="../images/img/blog3.png" class="img-fluid" />
-            <img src="../images/img/blog4.png" class="img-fluid" />
+        <div class="col-3" id="aside">
+          <div class="px-2">
+            <div class="list-group" id="category-list-nav">
+              <h4>Danh mục sản phẩm</h4>
+              <a
+                href="../html/shop.html"
+                class="list-group-item list-group-item-action"
+                >Tất cả sản phẩm</a
+              >
+              <a
+                href="../html/quanbetrai.html"
+                class="list-group-item list-group-item-action active"
+                >Quần bé trai</a
+              >
+              <a
+                href="../html/phukien.html"
+                class="list-group-item list-group-item-action"
+                >Phụ kiện</a
+              >
+              <a
+                href="../html/quanbegai.html"
+                class="list-group-item list-group-item-action"
+                >Quần bé gái</a
+              >
+              <a
+                href="../html/aothunbetrai.html"
+                class="list-group-item list-group-item-action"
+                >Áo thun bé trai</a
+              >
+              <a
+                href="../html/dobobetrai.html"
+                class="list-group-item list-group-item-action"
+                >Đồ bộ bé trai</a
+              >
+              <a
+                href="../html/dobobegai.html"
+                class="list-group-item list-group-item-action"
+                >Đồ bộ bé gái</a
+              >
+              <a
+                href="../html/aothunbegai.html"
+                class="list-group-item list-group-item-action"
+                >Áo thun bé gái</a
+              >
+            </div>
           </div>
-        </div>
-        <div class="col-md-9" id="section">
-          <div class="card">
-            <div class="card-header text-center">
-              <span class="display-4 text-center">ĐĂNG KÝ TÀI KHOẢN</span>
+
+          <div class="loc-san-pham my-2 mx-1">
+            <div class="my-2 filterSP">
+              <h4 class="text-center">Lọc theo giá</h4>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Từ" />
+                <div class="input-group-prepend">
+                  <span class="input-group-text">-</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Đến" />
+              </div>
             </div>
 
-            <div class="card-body">
-              <form id="registerForm" novalidate>
-                <div class="form-group">
-                  <label for="fullName">Họ và tên:</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="fullName"
-                    name="fullName"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="username">Tên đăng nhập:</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="username"
-                    name="username"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="password">Mật khẩu:</label>
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="password"
-                    name="password"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="phone">Số điện thoại:</label>
-                  <input
-                    type="tel"
-                    class="form-control"
-                    id="phone"
-                    name="phone"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="email">Email:</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    name="email"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="dob">Ngày tháng năm sinh:</label>
-                  <input
-                    type="date"
-                    class="form-control"
-                    id="dob"
-                    name="dob"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="address">Địa chỉ:</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="address"
-                    name="address"
-                  />
-                </div>
-              </form>
+            <!-- Lọc theo giảm giá -->
+            <div class="my-2 filterSP">
+              <h4 class="text-center">Giảm giá</h4>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="discount"
+                  id="discountYes"
+                />
+                <label class="form-check-label" for="discountYes"
+                  >Có giảm giá</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="discount"
+                  id="discountNo"
+                />
+                <label class="form-check-label" for="discountNo"
+                  >Không giảm giá</label
+                >
+              </div>
             </div>
-            <div class="card-footer">
-              <button type="submit" class="btn btn-primary btn-block">
-                Đăng ký
-              </button>
+
+            <div class="my-2 p-2">
+              <button class="btn btn-primary btn-block">Lọc</button>
             </div>
           </div>
+        </div>
+        <div class="col-9" id="section">
+          <div id="top"></div>
+          <div id="productList" class="row">
+            <!-- Đây là nơi để hiển thị danh sách sản phẩm -->
+          </div>
+          <ul id="pagination" class="pagination justify-content-center">
+            <!-- Đây là nơi để hiển thị thanh phân trang -->
+          </ul>
+          <script>
+            $(document).ready(function () {
+              displayProducts(productList, "Mũ Fullface");
+            });
+          </script>
         </div>
       </div>
     </div>
