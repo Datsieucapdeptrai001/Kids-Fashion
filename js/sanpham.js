@@ -212,6 +212,7 @@ var productList = [
     name: "Quần kaki thời trang bé trai",
     image: "../images/QuanBTrai/qd9.webp",
     category: "Quần bé trai",
+    price: 550000,
     description:
       "Quần kaki thời trang bé trai, thiết kế trẻ trung và năng động.",
     discountPercent: 25,
