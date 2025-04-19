@@ -21,7 +21,7 @@ body {
 
 /* header */
 #header {
-  background-color: #363f4d;
+  background-color: #ff7f50; /* Thay đổi màu nền header thành cam */
 }
 
 #top-header {
@@ -97,10 +97,10 @@ body {
   justify-content: center;
   height: 46px;
   width: 46px;
-  color: #ffffff;
+  color: white; /* Đổi màu chữ icon liên hệ thành trắng */
   border-radius: 50%;
   font-size: 18px;
-  background: #fb5530;
+  background: #ff7f50; /* Thay đổi màu icon liên hệ thành cam */
   margin: 2px;
 }
 
@@ -125,7 +125,7 @@ body {
   height: 46px;
   width: 46px;
   margin: 2px;
-  background: #fb5530;
+  background: #ff7f50; /* Thay đổi màu icon giỏ hàng thành cam */
   color: #fff;
   border-radius: 50%;
 }
@@ -208,6 +208,18 @@ body {
   bottom: 70px; /* Điều chỉnh khoảng cách với bottom của slide */
   left: 50%; /* Để căn giữa theo chiều ngang */
   transform: translateX(-50%); /* Dịch chuyển nút sang trái để căn giữa */
+  background-color: #ff7f50; /* Màu nền cam cho nút mua ngay */
+  color: white; /* Màu chữ trắng cho nút mua ngay */
+  padding: 10px 20px; /* Khoảng cách bên trong nút */
+  border: none; /* Loại bỏ viền */
+  border-radius: 5px; /* Bo tròn góc */
+  cursor: pointer; /* Hiển thị con trỏ chuột khi di vào */
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Hiệu ứng chuyển đổi màu nền */
+}
+
+.shopping-now-btn:hover {
+  background-color: #e6714d; /* Màu cam đậm hơn khi hover */
 }
 
 h4 {
@@ -322,7 +334,7 @@ h4 {
   height: 70px;
   line-height: 70px;
   text-align: center;
-  /* background-color: #f8b400; Màu nền của nút */
+  background-color: #ff7f50; /* Màu nền cam cho nút cuộn lên */
   border-radius: 50%; /* Độ cong của góc */
 }
 
@@ -344,9 +356,9 @@ h4 {
 } */
 
 /* footer end */
-/*  */
+/* */
 /* điều chỉnh css phù hợp các trang html */
-/*  */
+/* */
 
 /* home.html start */
 .home-section-head {
@@ -423,6 +435,7 @@ h4 {
 #cardSlider {
   /* border: 1px solid red; */
 }
+
 .card {
   margin-bottom: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -435,13 +448,13 @@ h4 {
 /* Định dạng màu sắc cho các nút điều hướng trong carousel */
 .carousel-control-prev,
 .carousel-control-next {
-  color: #fb5530; /* Màu chữ trắng */
+  color: white; /* Màu chữ trắng cho nút điều hướng carousel */
 }
 
 /* Định dạng màu sắc cho các biểu tượng (icons) điều hướng */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: #007bff; /* Màu nền xanh dương */
+  background-color: #ff7f50; /* Thay đổi màu nền icon điều hướng carousel thành cam */
 }
 
 /* Tùy chỉnh các hình ảnh trong card */
@@ -473,7 +486,7 @@ h4 {
 }
 
 .carousel-indicators li {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 127, 80, 0.5); /* Màu cam nhạt hơn cho dot */
   border-radius: 50%;
   width: 10px;
   height: 10px;
@@ -484,7 +497,7 @@ h4 {
 }
 
 .carousel-indicators .active {
-  background-color: #e8bd72; /* Màu sắc của dot active */
+  background-color: #ff7f50; /* Màu cam đậm cho dot active */
 }
 
 .about-blogs {
@@ -575,14 +588,25 @@ h4 {
 #sotrang-product button {
   width: 75px;
   height: 25px;
+  color: white; /* Màu chữ trắng cho nút phân trang */
+  background-color: #ff7f50; /* Màu nền cam cho nút phân trang */
+  border: 1px solid #ff7f50; /* Viền cam cho nút phân trang */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
+
+#sotrang-product button:hover {
+  background-color: #e6714d; /* Màu cam đậm hơn khi hover */
+}
+
 .outputPT {
   cursor: pointer;
-  border: 1px solid black;
+  border: 1px solid #ff7f50; /* Viền cam cho số trang */
   padding-left: 10px;
   padding-right: 10px;
   font-size: 20px;
   margin: 5px;
+  color: #ff7f50; /* Màu chữ cam cho số trang */
 }
 
 /* body content end */
@@ -605,4 +629,17 @@ h4 {
 
 .product-image:hover {
   transform: scale(1.1);
+}
+
+/* shop.html end */
+
+/* CSS cho banner (bạn cần điều chỉnh selector nếu cấu trúc HTML khác) */
+#main-banner .banner-title {
+  color: #ffff00; /* Đổi màu chữ tiêu đề banner thành vàng */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Thêm bóng đổ để tăng độ tương phản */
+}
+
+#main-banner .banner-description {
+  color: #ffff00; /* Đổi màu chữ mô tả banner thành vàng */
+  /* Bạn có thể điều chỉnh font-size, line-height nếu cần */
 }

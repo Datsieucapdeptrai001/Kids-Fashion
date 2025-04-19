@@ -201,7 +201,7 @@ legend {
 
 .contact-icon {
   display: inline-block;
-  float: left;
+  display: inline-block;
   color: #e8bd72;
 }
 
@@ -320,10 +320,7 @@ legend {
   flex-direction: row;
 }
 
-#flash-sale {
-  /* border: 1px solid tomato; */
-  /* margin-left: 10%; */
-}
+/* Removed empty ruleset for #flash-sale */
 
 #flash-sale-top {
   /* border: 1px solid red; */
